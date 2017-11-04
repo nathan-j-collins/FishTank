@@ -1,10 +1,7 @@
 ﻿namespace FishTank
 {
-    public class GoldFish : IFish
+    public class GoldFish : Fish
     {
-        public string Name { get; }
-        public double AmountOfFoodRequiredInGrams { get; }
-
         public GoldFish(string name)
         {
             AmountOfFoodRequiredInGrams = 0.1;

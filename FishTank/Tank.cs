@@ -4,14 +4,14 @@ namespace FishTank
 {
     public class Tank
     {
-        public List<IFish> Fish;
+        public List<Fish> Fish;
 
         public Tank()
         {
-            Fish = new List<IFish>();
+            Fish = new List<Fish>();
         }
 
-        public void AddFish(IFish fish)
+        public void AddFish(Fish fish)
         {
             Fish.Add(fish);
         }

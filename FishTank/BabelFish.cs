@@ -1,10 +1,7 @@
 ﻿namespace FishTank
 {
-    public class BabelFish : IFish
+    public class BabelFish : Fish
     {
-        public string Name { get; }
-        public double AmountOfFoodRequiredInGrams { get; }
-
         public BabelFish(string name)
         {
             AmountOfFoodRequiredInGrams = 0.3;
