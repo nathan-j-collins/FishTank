@@ -9,15 +9,15 @@ namespace FishTankConsoleApp
         {
             var tank = new Tank();
 
-            var goldfish = new GoldFish("Bob");
-            var angelfish = new AngelFish("Jim");
-            var babelfish = new BabelFish("Harry");
+            var goldFish = new GoldFish("Bob");
+            var angelFish = new AngelFish("Jim");
+            var babelFish = new BabelFish("Harry");
 
-            tank.AddFish(goldfish);
+            tank.AddFish(goldFish);
             Console.WriteLine(tank.Feed());
-            tank.AddFish(angelfish);
+            tank.AddFish(angelFish);
             Console.WriteLine(tank.Feed());
-            tank.AddFish(babelfish);
+            tank.AddFish(babelFish);
             Console.WriteLine(tank.Feed());
             Console.ReadLine();
         }

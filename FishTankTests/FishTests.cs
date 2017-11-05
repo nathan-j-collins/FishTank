@@ -7,20 +7,20 @@ namespace FishTankTests
     [TestClass]
     public class FishTests
     {
-        GoldFish goldfish;
-        AngelFish angelfish;
-        BabelFish babelfish;
+        GoldFish goldFish;
+        AngelFish angelFish;
+        BabelFish babelFish;
 
         [TestMethod]
         public void CreateFishAndNameIsStoredCorrectly()
         {
-            goldfish = new GoldFish("Bob");
-            angelfish = new AngelFish("Jim");
-            babelfish = new BabelFish("Harry");
+            goldFish = new GoldFish("Bob");
+            angelFish = new AngelFish("Jim");
+            babelFish = new BabelFish("Harry");
 
-            Assert.AreEqual("Bob", goldfish.Name);
-            Assert.AreEqual("Jim", angelfish.Name);
-            Assert.AreEqual("Harry", babelfish.Name);
+            Assert.AreEqual("Bob", goldFish.Name);
+            Assert.AreEqual("Jim", angelFish.Name);
+            Assert.AreEqual("Harry", babelFish.Name);
         }
     }
 }

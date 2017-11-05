@@ -7,15 +7,15 @@ namespace FishTankTests
     [TestClass]
     public class TankTests
     {
-        GoldFish goldfish;
-        AngelFish angelfish;
-        BabelFish babelfish;
+        GoldFish goldFish;
+        AngelFish angelFish;
+        BabelFish babelFish;
 
         public TankTests()
         {
-            goldfish = new GoldFish("Bob");
-            angelfish = new AngelFish("Jim");
-            babelfish = new BabelFish("Harry");
+            goldFish = new GoldFish("Bob");
+            angelFish = new AngelFish("Jim");
+            babelFish = new BabelFish("Harry");
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace FishTankTests
         {
             var tank = new Tank();
 
-            tank.AddFish(goldfish);
+            tank.AddFish(goldFish);
 
             Assert.AreEqual(1, tank.Fish.Count);
         }
@@ -33,8 +33,8 @@ namespace FishTankTests
         {
             var tank = new Tank();
 
-            tank.AddFish(goldfish);
-            tank.AddFish(angelfish);
+            tank.AddFish(goldFish);
+            tank.AddFish(angelFish);
 
             Assert.AreEqual(2, tank.Fish.Count);
         }
@@ -44,13 +44,13 @@ namespace FishTankTests
         {
             var tank = new Tank();
 
-            tank.AddFish(goldfish);
-            tank.AddFish(angelfish);
-            tank.AddFish(babelfish);
+            tank.AddFish(goldFish);
+            tank.AddFish(angelFish);
+            tank.AddFish(babelFish);
 
             var feed = tank.Feed();
-            double dubs = 0.1 + 0.2 + 0.3;
-            Assert.AreEqual(dubs, feed);
+            double expectedResult = 0.1 + 0.2 + 0.3;
+            Assert.AreEqual(expectedResult, feed);
         }
     }
 }
